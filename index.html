@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Aldi — Visual Communication Design (DKV) Portfolio</title>
+  <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS v3 with Plugins -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <!-- Tailwind Custom Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              lime: '#95C11F',
+              'lime-hover': '#84AC1B',
+              'lime-light': '#F4F9E8',
+              black: '#111111',
+              charcoal: '#18181B',
+              muted: '#6B7280',
+              border: '#E5E7EB',
+              surface: '#FAFAFA'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif']
+          },
+          boxShadow: {
+            'glow-lime': '0 0 60px -10px rgba(149, 193, 31, 0.45)',
+            'card-hover': '0 20px 35px -10px rgba(17, 17, 17, 0.07)'
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Typography & Scroll Styles -->
+  <style>
+    html, body {
+      overflow-x: hidden;
+      overflow-y: auto;
+      height: auto;
+      min-height: 100%;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #111111;
+      background-color: #FFFFFF;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .font-display {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    ::selection {
+      background-color: #95C11F;
+      color: #111111;
+    }
+    .smooth-transition {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+  </style>
+</head>
+<body class="bg-white text-brand-black antialiased selection:bg-brand-lime selection:text-brand-black">
+
+  <!-- BEGIN: NavigationBar -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
+      <!-- Brand Logo -->
+      <a aria-label="Aldi Portfolio Home" class="font-display font-bold text-2xl tracking-tight flex items-center group" href="#">
+        <span>Aldi</span>
+        <span class="inline-block w-2 h-2 rounded-full bg-brand-lime ml-0.5 group-hover:scale-125 transition-transform duration-200"></span>
+      </a>
+
+      <!-- Center & Secondary Navigation Links -->
+      <nav aria-label="Primary Navigation" class="hidden md:flex items-center space-x-8 text-sm font-medium text-brand-charcoal">
+        <a class="hover:text-brand-lime transition-colors" href="#works">Works</a>
+        <a class="hover:text-brand-lime transition-colors" href="#philosophy">Philosophy</a>
+        <a class="hover:text-brand-lime transition-colors" href="#skills">Skills</a>
+        <a class="hover:text-brand-lime transition-colors" href="#about">About</a>
+        <a class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-lime-light text-brand-black hover:bg-brand-lime transition-colors" href="#contact">
+          <span class="w-1.5 h-1.5 rounded-full bg-brand-lime animate-pulse"></span>
+          <span>Let's Talk</span>
+        </a>
+      </nav>
+
+      <!-- Action Button (Right) -->
+      <div class="flex items-center gap-4">
+        <a class="inline-flex items-center justify-center px-5 py-2.5 text-xs uppercase tracking-wider font-semibold rounded-full border border-brand-black text-brand-black hover:bg-brand-black hover:text-white transition-all duration-300" href="#contact">
+          Download CV
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- END: NavigationBar -->
+
+  <main>
+    <!-- BEGIN: HeroSection -->
+    <section class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden bg-white" id="about">
+      <div class="max-w-7xl mx-auto px-6 md:px-10">
+        <!-- Quick Status Badges -->
+        <div class="flex flex-wrap items-center gap-3 mb-8">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase bg-brand-surface border border-brand-border text-brand-charcoal">
+            <span class="w-1.5 h-1.5 rounded-full bg-brand-black"></span>
+            DKV Student • 6th Sem
+          </span>
+          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase bg-white border border-brand-border text-brand-charcoal">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-lime opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-lime"></span>
+            </span>
+            Open for Freelance &amp; Internship
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          <!-- Left Column: Typography & Bio Details -->
+          <div class="lg:col-span-7 flex flex-col justify-center">
+            <h1 class="font-display tracking-tight leading-[1.08] text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
+              <span class="text-brand-lime font-bold">Hi,</span> <span class="font-bold text-brand-black">I'm</span> <span class="inline-block transform hover:rotate-12 transition-transform duration-200">👋</span>
+              <br>
+              <span class="font-light text-brand-black tracking-tighter">Aldi</span>
+            </h1>
+            <p class="mt-8 text-lg sm:text-xl text-brand-muted font-normal max-w-xl leading-relaxed">
+              Visual Communication Design (<span class="text-brand-black font-semibold">DKV</span>) student passionate about brand identity, graphic design, 3D modeling, and crafting impactful visual experiences.
+            </p>
+
+            <!-- Call-to-action buttons -->
+            <div class="mt-10 flex flex-wrap items-center gap-4">
+              <a class="inline-flex items-center justify-center px-8 py-4 rounded-full bg-brand-black text-white text-sm font-semibold tracking-wide hover:bg-brand-lime hover:text-brand-black transition-all duration-300 shadow-sm hover:shadow-md" href="#contact">
+                Let's Collaborate
+                <svg aria-hidden="true" class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+              </a>
+              <a class="inline-flex items-center justify-center px-7 py-4 rounded-full border border-brand-border text-brand-black text-sm font-semibold hover:border-brand-black transition-all duration-200" href="#works">
+                Explore Works ↓
+              </a>
+            </div>
+
+            <!-- Quick Metrics / Highlights -->
+            <div class="mt-14 pt-8 border-t border-brand-border grid grid-cols-3 gap-6 max-w-lg">
+              <div>
+                <span class="font-display text-2xl sm:text-3xl font-bold text-brand-black">3.84</span>
+                <p class="text-xs text-brand-muted mt-1 uppercase tracking-wider font-medium">Academic GPA</p>
+              </div>
+              <div>
+                <span class="font-display text-2xl sm:text-3xl font-bold text-brand-black">20+</span>
+                <p class="text-xs text-brand-muted mt-1 uppercase tracking-wider font-medium">Design Projects</p>
+              </div>
+              <div>
+                <span class="font-display text-2xl sm:text-3xl font-bold text-brand-black">100%</span>
+                <p class="text-xs text-brand-muted mt-1 uppercase tracking-wider font-medium">Concept Driven</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Circular Portrait Frame -->
+          <div class="lg:col-span-5 flex flex-col items-center justify-center relative">
+            <div class="relative group" data-purpose="avatar-container">
+              <!-- Radial Lime Green Shadow Wrapper -->
+              <div class="w-72 h-72 sm:w-88 sm:h-88 md:w-96 md:h-96 rounded-full p-2.5 bg-white border border-brand-border relative transition-transform duration-500 group-hover:scale-[1.02]" style="box-shadow: 0 0 65px -10px rgba(149, 193, 31, 0.45);">
+                <!-- Inner Image Clipping Container -->
+                <div class="w-full h-full rounded-full overflow-hidden bg-neutral-100 relative">
+                  <img alt="Aldi Profile Photo" class="w-full h-full object-cover object-center filter contrast-[1.02] transition-transform duration-700 ease-out group-hover:scale-105" id="avatarImage" src="data:image/jpeg;base64,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">
+                  <!-- Interactive Photo Switcher Overlay -->
+                  <label class="absolute inset-0 bg-brand-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center cursor-pointer text-white p-4 text-center" for="photoInput">
+                    <span class="p-3 bg-white/20 backdrop-blur-md rounded-full mb-2">
+                      <svg aria-hidden="true" class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                        <path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                      </svg>
+                    </span>
+                    <span class="text-xs uppercase tracking-wider font-semibold bg-white text-brand-black px-3 py-1.5 rounded-full shadow">Change Photo</span>
+                    <span class="text-[10px] text-white/80 mt-1">PNG, JPG or WebP</span>
+                  </label>
+                  <input accept="image/*" class="sr-only" id="photoInput" type="file">
+                </div>
+                <!-- Floating Editorial Tag on Avatar -->
+                <div class="absolute -bottom-2 -left-4 sm:bottom-4 sm:-left-6 bg-white border border-brand-border px-4 py-2 rounded-2xl shadow-lg flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-full bg-brand-lime flex items-center justify-center text-brand-black font-bold text-xs">
+                    DKV
+                  </div>
+                  <div>
+                    <p class="text-xs font-bold leading-tight text-brand-black">Visual Designer</p>
+                    <p class="text-[10px] text-brand-muted leading-tight">Surabaya, Indonesia</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="mt-4 text-[11px] text-brand-muted tracking-wide flex items-center gap-1.5">
+              <svg aria-hidden="true" class="w-3.5 h-3.5 text-brand-lime" fill="currentColor" viewBox="0 0 20 20">
+                <path clip-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" fill-rule="evenodd"></path>
+              </svg>
+              Hover photo to upload your own picture
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END: HeroSection -->
+
+    <!-- BEGIN: ToolsSoftwareStrip -->
+    <section aria-label="Software and Toolkit" class="border-y border-brand-border bg-brand-surface py-7">
+      <div class="max-w-7xl mx-auto px-6 md:px-10">
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-4 items-center">
+          <!-- Tool 1: Adobe Illustrator -->
+          <div class="flex items-center gap-3.5 p-2 rounded-xl group hover:bg-white transition-colors duration-200">
+            <div class="w-11 h-11 rounded-xl bg-brand-black text-brand-lime font-display font-black text-base flex items-center justify-center border border-neutral-800 shadow-sm flex-shrink-0 group-hover:scale-105 transition-transform">
+              Ai
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-brand-black leading-snug">Illustrator</h4>
+              <p class="text-[11px] text-brand-muted leading-tight">Vector &amp; Identity</p>
+            </div>
+          </div>
+
+          <!-- Tool 2: Adobe Photoshop -->
+          <div class="flex items-center gap-3.5 p-2 rounded-xl group hover:bg-white transition-colors duration-200">
+            <div class="w-11 h-11 rounded-xl bg-brand-black text-[#31A8FF] font-display font-black text-base flex items-center justify-center border border-neutral-800 shadow-sm flex-shrink-0 group-hover:scale-105 transition-transform">
+              Ps
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-brand-black leading-snug">Photoshop</h4>
+              <p class="text-[11px] text-brand-muted leading-tight">Raster &amp; Visuals</p>
+            </div>
+          </div>
+
+          <!-- Tool 3: Adobe After Effects -->
+          <div class="flex items-center gap-3.5 p-2 rounded-xl group hover:bg-white transition-colors duration-200">
+            <div class="w-11 h-11 rounded-xl bg-brand-black text-[#9999FF] font-display font-black text-base flex items-center justify-center border border-neutral-800 shadow-sm flex-shrink-0 group-hover:scale-105 transition-transform">
+              Ae
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-brand-black leading-snug">After Effects</h4>
+              <p class="text-[11px] text-brand-muted leading-tight">Motion &amp; Type</p>
+            </div>
+          </div>
+
+          <!-- Tool 4: Blender 3D -->
+          <div class="flex items-center gap-3.5 p-2 rounded-xl group hover:bg-white transition-colors duration-200">
+            <div class="w-11 h-11 rounded-xl bg-brand-black text-[#EA7600] font-display font-black text-base flex items-center justify-center border border-neutral-800 shadow-sm flex-shrink-0 group-hover:scale-105 transition-transform">
+              <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12.5 2a4.5 4.5 0 00-4.5 4.5c0 .32.04.63.1.93L4.8 9.5a4.5 4.5 0 00-2.8 4.2 4.5 4.5 0 004.5 4.5c1.4 0 2.65-.64 3.48-1.63l5.52 2.76A4.5 4.5 0 0020 17.5a4.5 4.5 0 00-7.5-3.23V7A4.5 4.5 0 0012.5 2zm0 2.5a2 2 0 110 4 2 2 0 010-4z"></path>
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-brand-black leading-snug">Blender 3D</h4>
+              <p class="text-[11px] text-brand-muted leading-tight">Modeling &amp; Form</p>
+            </div>
+          </div>
+
+          <!-- Tool 5: Figma -->
+          <div class="flex items-center gap-3.5 p-2 rounded-xl group hover:bg-white transition-colors duration-200">
+            <div class="w-11 h-11 rounded-xl bg-brand-black text-[#A259FF] font-display font-black text-base flex items-center justify-center border border-neutral-800 shadow-sm flex-shrink-0 group-hover:scale-105 transition-transform">
+              Fg
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-brand-black leading-snug">Figma</h4>
+              <p class="text-[11px] text-brand-muted leading-tight">UI/UX &amp; Layout</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END: ToolsSoftwareStrip -->
+
+    <!-- BEGIN: PhilosophySection -->
+    <section class="py-24 sm:py-32 bg-white" id="philosophy">
+      <div class="max-w-6xl mx-auto px-6 md:px-10">
+        <!-- Category Eyebrow -->
+        <div class="flex items-center gap-2 mb-6">
+          <span class="w-2.5 h-2.5 rounded-full bg-brand-lime inline-block"></span>
+          <span class="text-xs uppercase tracking-widest font-bold text-brand-black">Philosophy &amp; Manifesto</span>
+        </div>
+
+        <!-- Editorial Typography Block -->
+        <blockquote class="text-2xl sm:text-4xl md:text-5xl font-display font-medium leading-[1.3] text-brand-charcoal">
+          “<span class="text-brand-lime font-bold">Good visual design communicates ideas before a single word is read.</span> 
+          As a DKV creator, <span class="text-brand-lime font-semibold">every layout, color, and composition</span> 
+          is crafted with intention. From brand identity to 3D visual exploration, 
+          <span class="text-brand-lime font-semibold">I focus on turning concepts into memorable visual stories.</span>”
+        </blockquote>
+
+        <!-- Quote Subtext Signoff -->
+        <div class="mt-10 flex flex-wrap items-center justify-between gap-6 pt-8 border-t border-brand-border">
+          <div class="flex items-center gap-3">
+            <span class="w-10 h-0.5 bg-brand-lime"></span>
+            <p class="text-sm text-brand-muted font-medium">Aldi — Nirmana &amp; Structural Thinking Foundation</p>
+          </div>
+          <div class="flex items-center gap-4 text-xs font-mono uppercase tracking-wider text-brand-muted">
+            <span>DKV-STUDIO-2026</span>
+            <span>•</span>
+            <span>SYSTEMATIC SIMPLICITY</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END: PhilosophySection -->
+
+    <!-- BEGIN: SelectedWorksSection -->
+    <section class="py-24 bg-brand-surface border-t border-brand-border" id="works">
+      <div class="max-w-7xl mx-auto px-6 md:px-10">
+        <!-- Section Header Row -->
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-6">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-muted block mb-2">Curated Portfolio</span>
+            <h2 class="font-display text-4xl sm:text-5xl font-bold tracking-tight text-brand-black">
+              <span class="text-brand-lime">My</span> Selected Works
+            </h2>
+          </div>
+
+          <!-- Interactive Tab Filters -->
+          <div class="flex items-center gap-2 flex-wrap" id="filterContainer">
+            <button class="filter-btn px-4 py-2 rounded-full text-xs font-semibold bg-brand-black text-white transition-colors" data-filter="all">
+              All Works
+            </button>
+            <button class="filter-btn px-4 py-2 rounded-full text-xs font-semibold bg-white border border-brand-border text-brand-charcoal hover:border-brand-black transition-colors" data-filter="3d">
+              3D
+            </button>
+            <button class="filter-btn px-4 py-2 rounded-full text-xs font-semibold bg-white border border-brand-border text-brand-charcoal hover:border-brand-black transition-colors" data-filter="nirmana">
+              Nirmana
+            </button>
+            <button class="filter-btn px-4 py-2 rounded-full text-xs font-semibold bg-white border border-brand-border text-brand-charcoal hover:border-brand-black transition-colors" data-filter="graphic">
+              Graphic Design
+            </button>
+          </div>
+        </div>
+
+        <!-- 3-Column Portfolio Cards Grid (Ordered: 1. 3D, 2. Nirmana, 3. Graphic Design) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <!-- Card 1: 3D -->
+          <article class="work-card bg-white border border-brand-border rounded-2xl overflow-hidden group hover:shadow-card-hover transition-all duration-300 flex flex-col" data-category="3d">
+            <div class="relative aspect-[4/3] bg-neutral-950 overflow-hidden flex items-center justify-center p-0">
+              <div class="w-full h-full relative flex items-center justify-center bg-gradient-to-br from-neutral-900 via-neutral-950 to-black group-hover:scale-105 transition-transform duration-500" id="cardImageContainer1">
+                <!-- Default 3D Vector Graphic -->
+                <svg class="w-full h-full object-cover" fill="none" preserveAspectRatio="xMidYMid slice" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <radialGradient cx="50%" cy="50%" id="card1Glow" r="50%">
+                      <stop offset="0%" stop-color="#95C11F" stop-opacity="0.35"></stop>
+                      <stop offset="60%" stop-color="#95C11F" stop-opacity="0.05"></stop>
+                      <stop offset="100%" stop-color="#000000" stop-opacity="0"></stop>
+                    </radialGradient>
+                    <linearGradient id="card1Grad" x1="0%" x2="100%" y1="0%" y2="100%">
+                      <stop offset="0%" stop-color="#95C11F"></stop>
+                      <stop offset="100%" stop-color="#384C00"></stop>
+                    </linearGradient>
+                  </defs>
+                  <rect fill="#0C0E12" height="300" width="400"></rect>
+                  <circle cx="200" cy="150" fill="url(#card1Glow)" r="140"></circle>
+                  <g transform="translate(200 150) rotate(-18)">
+                    <ellipse cx="0" cy="0" opacity="0.9" rx="90" ry="46" stroke="#95C11F" stroke-width="2.5"></ellipse>
+                    <ellipse cx="0" cy="0" opacity="0.4" rx="90" ry="46" stroke="#FFFFFF" stroke-dasharray="5 5" stroke-width="1.5" transform="rotate(35)"></ellipse>
+                    <ellipse cx="0" cy="0" opacity="0.75" rx="80" ry="24" stroke="url(#card1Grad)" stroke-width="3" transform="rotate(-30)"></ellipse>
+                    <circle cx="0" cy="0" fill="#95C11F" opacity="0.85" r="26"></circle>
+                    <circle cx="0" cy="0" fill="#FFFFFF" opacity="0.9" r="10"></circle>
+                  </g>
+                  <text fill="#95C11F" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" letter-spacing="2" x="28" y="44">CYCLES // 4K</text>
+                  <text fill="#A1A1AA" font-family="monospace" font-size="10" text-anchor="end" x="372" y="44">IOR 1.52 // BLENDER</text>
+                  <line stroke="#27272A" stroke-width="1" x1="28" x2="372" y1="262" y2="262"></line>
+                  <text fill="#71717A" font-family="monospace" font-size="9" x="28" y="278">HARD SURFACE • SUBSURFACE OCTANE</text>
+                  <text fill="#95C11F" font-family="monospace" font-size="9" text-anchor="end" x="372" y="278">READY</text>
+                </svg>
+                <img alt="3D Work preview" class="hidden absolute inset-0 w-full h-full object-cover z-10" id="cardImg1" src="">
+              </div>
+
+              <!-- Interactive Click-to-Upload Overlay Trigger -->
+              <label class="absolute inset-0 z-20 bg-brand-black/60 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center cursor-pointer text-white p-4 text-center" for="cardInput1">
+                <span class="p-3 bg-white/20 backdrop-blur-md rounded-full mb-2">
+                  <svg aria-hidden="true" class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                  </svg>
+                </span>
+                <span class="text-xs uppercase tracking-wider font-semibold bg-white text-brand-black px-3.5 py-1.5 rounded-full shadow">Click to upload 3D image</span>
+                <span class="text-[10px] text-white/80 mt-1">PNG, JPG, WebP</span>
+              </label>
+              <input accept="image/*" class="sr-only" id="cardInput1" type="file">
+
+              <!-- Top floating badge -->
+              <span class="absolute top-4 left-4 z-10 bg-brand-black/85 backdrop-blur-sm text-brand-lime text-[11px] font-semibold px-3 py-1 rounded-full border border-white/10 pointer-events-none">
+                3D Design
+              </span>
+            </div>
+
+            <!-- Card Content Body -->
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between text-xs text-brand-muted mb-2">
+                  <span>3D Modeling &amp; Rendering</span>
+                  <span class="font-mono">2026</span>
+                </div>
+                <h3 class="font-display font-bold text-xl text-brand-black group-hover:text-brand-lime transition-colors">
+                  3D
+                </h3>
+                <p class="text-sm text-brand-muted mt-2 leading-relaxed">
+                  3D modeling, hard-surface objects, lighting setups, and realistic texture rendering created in Blender.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-brand-border flex items-center justify-between text-xs font-semibold">
+                <span class="text-brand-charcoal">Blender 3D • Octane • Substance</span>
+                <a class="text-brand-black group-hover:translate-x-1 transition-transform inline-flex items-center gap-1 font-bold hover:text-brand-lime" href="#contact">
+                  View Case Study →
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Nirmana -->
+          <article class="work-card bg-white border border-brand-border rounded-2xl overflow-hidden group hover:shadow-card-hover transition-all duration-300 flex flex-col" data-category="nirmana">
+            <div class="relative aspect-[4/3] bg-neutral-900 overflow-hidden flex items-center justify-center p-0">
+              <div class="w-full h-full relative flex items-center justify-center bg-[#E5E7EB] group-hover:scale-105 transition-transform duration-500" id="cardImageContainer2">
+                <!-- Default Nirmana Vector Graphic -->
+                <svg class="w-full h-full object-cover" fill="none" preserveAspectRatio="xMidYMid slice" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                  <rect fill="#EAECEF" height="300" width="400"></rect>
+                  <rect fill="#FFFFFF" height="252" rx="10" stroke="#D1D5DB" stroke-width="1.5" width="352" x="24" y="24"></rect>
+                  <text fill="#111111" font-family="'Space Grotesk', sans-serif" font-size="34" font-weight="800" letter-spacing="-1.5" x="44" y="68">02</text>
+                  <rect fill="#111111" height="22" rx="4" width="88" x="268" y="44"></rect>
+                  <text fill="#95C11F" font-family="monospace" font-size="9" font-weight="700" text-anchor="middle" x="312" y="58">NIRMANA 2D/3D</text>
+                  <g transform="translate(44 94)">
+                    <rect fill="#111111" height="34" rx="4" width="70" x="0" y="0"></rect>
+                    <rect fill="#95C11F" height="34" rx="4" width="70" x="78" y="0"></rect>
+                    <rect fill="#111111" height="34" rx="4" width="70" x="156" y="0"></rect>
+                    <rect fill="#FFFFFF" height="34" rx="4" stroke="#111111" stroke-width="2" width="78" x="234" y="0"></rect>
+                    <rect fill="#FFFFFF" height="34" rx="4" stroke="#111111" stroke-width="2" width="70" x="0" y="42"></rect>
+                    <rect fill="#111111" height="34" rx="4" width="70" x="78" y="42"></rect>
+                    <rect fill="#95C11F" height="34" rx="4" width="70" x="156" y="42"></rect>
+                    <rect fill="#111111" height="34" rx="4" width="78" x="234" y="42"></rect>
+                    <rect fill="#95C11F" height="34" rx="4" width="70" x="0" y="84"></rect>
+                    <rect fill="#FFFFFF" height="34" rx="4" stroke="#111111" stroke-width="2" width="70" x="78" y="84"></rect>
+                    <rect fill="#111111" height="34" rx="4" width="70" x="156" y="84"></rect>
+                    <rect fill="#95C11F" height="34" rx="4" width="78" x="234" y="84"></rect>
+                  </g>
+                  <line stroke="#E5E7EB" stroke-width="1.5" x1="44" x2="356" y1="236" y2="236"></line>
+                  <text fill="#4B5563" font-family="monospace" font-size="8.5" font-weight="600" x="44" y="254">DWIMATRA &amp; TRIMATRA HARMONY</text>
+                  <text fill="#111111" font-family="monospace" font-size="8.5" font-weight="700" text-anchor="end" x="356" y="254">70x100 GRID SERIES</text>
+                </svg>
+                <img alt="Nirmana Work preview" class="hidden absolute inset-0 w-full h-full object-cover z-10" id="cardImg2" src="">
+              </div>
+
+              <!-- Interactive Click-to-Upload Overlay Trigger -->
+              <label class="absolute inset-0 z-20 bg-brand-black/60 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center cursor-pointer text-white p-4 text-center" for="cardInput2">
+                <span class="p-3 bg-white/20 backdrop-blur-md rounded-full mb-2">
+                  <svg aria-hidden="true" class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                  </svg>
+                </span>
+                <span class="text-xs uppercase tracking-wider font-semibold bg-white text-brand-black px-3.5 py-1.5 rounded-full shadow">Click to upload Nirmana image</span>
+                <span class="text-[10px] text-white/80 mt-1">PNG, JPG, WebP</span>
+              </label>
+              <input accept="image/*" class="sr-only" id="cardInput2" type="file">
+
+              <!-- Top floating badge -->
+              <span class="absolute top-4 left-4 z-10 bg-brand-black/85 backdrop-blur-sm text-brand-lime text-[11px] font-semibold px-3 py-1 rounded-full border border-white/10 pointer-events-none">
+                Visual Composition
+              </span>
+            </div>
+
+            <!-- Card Content Body -->
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between text-xs text-brand-muted mb-2">
+                  <span>Dwimatra &amp; Trimatra</span>
+                  <span class="font-mono">2026</span>
+                </div>
+                <h3 class="font-display font-bold text-xl text-brand-black group-hover:text-brand-lime transition-colors">
+                  Nirmana
+                </h3>
+                <p class="text-sm text-brand-muted mt-2 leading-relaxed">
+                  Explorations of visual rhythm, geometric balance, contrast, and color harmony in 2D and 3D composition.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-brand-border flex items-center justify-between text-xs font-semibold">
+                <span class="text-brand-charcoal">Illustrator • Manual Studies • Form</span>
+                <a class="text-brand-black group-hover:translate-x-1 transition-transform inline-flex items-center gap-1 font-bold hover:text-brand-lime" href="#contact">
+                  View Case Study →
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Graphic Design -->
+          <article class="work-card bg-white border border-brand-border rounded-2xl overflow-hidden group hover:shadow-card-hover transition-all duration-300 flex flex-col" data-category="graphic">
+            <div class="relative aspect-[4/3] bg-neutral-900 overflow-hidden flex items-center justify-center p-0">
+              <div class="w-full h-full relative flex items-center justify-center bg-gradient-to-br from-neutral-900 to-black group-hover:scale-105 transition-transform duration-500" id="cardImageContainer3">
+                <!-- Default Graphic Design Vector Graphic -->
+                <svg class="w-full h-full object-cover" fill="none" preserveAspectRatio="xMidYMid slice" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                  <rect fill="#14171A" height="300" width="400"></rect>
+                  <rect fill="#1C1F24" height="252" rx="12" stroke="#2D333B" stroke-width="1.5" width="348" x="26" y="24"></rect>
+                  <circle cx="56" cy="56" fill="#95C11F" r="16"></circle>
+                  <text fill="#111111" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="900" text-anchor="middle" x="56" y="62">A</text>
+                  <text fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700" x="82" y="56">IDENTITY SYSTEM</text>
+                  <text fill="#71717A" font-family="monospace" font-size="9" x="82" y="68">BRAND MANUAL // 2026</text>
+                  <rect fill="#95C11F" fill-opacity="0.15" height="20" rx="10" stroke="#95C11F" stroke-width="1" width="68" x="286" y="46"></rect>
+                  <text fill="#95C11F" font-family="monospace" font-size="8.5" font-weight="700" text-anchor="middle" x="320" y="59">DKV TYPE</text>
+                  <rect fill="#95C11F" height="10" rx="3" width="120" x="46" y="96"></rect>
+                  <rect fill="#FFFFFF" height="20" rx="4" width="220" x="46" y="114"></rect>
+                  <rect fill="#71717A" height="12" rx="3" width="180" x="46" y="142"></rect>
+                  <g transform="translate(46 172)">
+                    <circle cx="12" cy="12" fill="#95C11F" r="12"></circle>
+                    <circle cx="44" cy="12" fill="#FFFFFF" r="12"></circle>
+                    <circle cx="76" cy="12" fill="#384C00" r="12"></circle>
+                    <circle cx="108" cy="12" fill="#27272A" r="12"></circle>
+                  </g>
+                  <line stroke="#2D333B" stroke-width="1" x1="46" x2="354" y1="216" y2="216"></line>
+                  <text fill="#95C11F" font-family="monospace" font-size="9" font-weight="700" x="46" y="244">PANTONE 382 C</text>
+                  <text fill="#71717A" font-family="monospace" font-size="9" text-anchor="end" x="354" y="244">TYPOGRAPHIC SPECIMEN</text>
+                </svg>
+                <img alt="Graphic Design Work preview" class="hidden absolute inset-0 w-full h-full object-cover z-10" id="cardImg3" src="">
+              </div>
+
+              <!-- Interactive Click-to-Upload Overlay Trigger -->
+              <label class="absolute inset-0 z-20 bg-brand-black/60 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center cursor-pointer text-white p-4 text-center" for="cardInput3">
+                <span class="p-3 bg-white/20 backdrop-blur-md rounded-full mb-2">
+                  <svg aria-hidden="true" class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                  </svg>
+                </span>
+                <span class="text-xs uppercase tracking-wider font-semibold bg-white text-brand-black px-3.5 py-1.5 rounded-full shadow">Click to upload Graphic Design image</span>
+                <span class="text-[10px] text-white/80 mt-1">PNG, JPG, WebP</span>
+              </label>
+              <input accept="image/*" class="sr-only" id="cardInput3" type="file">
+
+              <!-- Top floating badge -->
+              <span class="absolute top-4 left-4 z-10 bg-brand-black/85 backdrop-blur-sm text-brand-lime text-[11px] font-semibold px-3 py-1 rounded-full border border-white/10 pointer-events-none">
+                Graphic Design
+              </span>
+            </div>
+
+            <!-- Card Content Body -->
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between text-xs text-brand-muted mb-2">
+                  <span>Visual Identity &amp; Print</span>
+                  <span class="font-mono">2026</span>
+                </div>
+                <h3 class="font-display font-bold text-xl text-brand-black group-hover:text-brand-lime transition-colors">
+                  Graphic Design
+                </h3>
+                <p class="text-sm text-brand-muted mt-2 leading-relaxed">
+                  Brand identity systems, typography layouts, posters, and commercial visual communication works.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-brand-border flex items-center justify-between text-xs font-semibold">
+                <span class="text-brand-charcoal">InDesign • Illustrator • Figma</span>
+                <a class="text-brand-black group-hover:translate-x-1 transition-transform inline-flex items-center gap-1 font-bold hover:text-brand-lime" href="#contact">
+                  View Case Study →
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Section Bottom CTA -->
+        <div class="mt-14 text-center">
+          <a class="inline-flex items-center justify-center px-8 py-3.5 rounded-full border border-brand-black text-brand-black text-xs uppercase tracking-wider font-bold hover:bg-brand-black hover:text-white transition-all duration-300" href="#contact">
+            View All Works on Behance →
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- END: SelectedWorksSection -->
+
+    <!-- BEGIN: SkillsSection -->
+    <section class="py-24 bg-white" id="skills">
+      <div class="max-w-7xl mx-auto px-6 md:px-10">
+        <div class="max-w-2xl mb-14">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="w-2.5 h-2.5 rounded-full bg-brand-lime inline-block"></span>
+            <span class="text-xs uppercase tracking-widest font-bold text-brand-black">Competencies</span>
+          </div>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold tracking-tight text-brand-black">
+            DKV Core Capabilities &amp; Visual Grammar
+          </h2>
+          <p class="mt-3 text-brand-muted text-sm sm:text-base leading-relaxed">
+            Formed through rigorous studio critiques, visual communications theory, and hands-on digital experiments.
+          </p>
+        </div>
+
+        <!-- Competency Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Competency 1 -->
+          <div class="p-8 rounded-2xl border border-brand-border bg-white hover:border-brand-lime transition-all duration-300 group">
+            <div class="w-12 h-12 rounded-xl bg-brand-surface border border-brand-border flex items-center justify-center font-display font-bold text-lg text-brand-black group-hover:bg-brand-lime transition-colors">
+              01
+            </div>
+            <h3 class="font-display font-bold text-xl text-brand-black mt-6">Typography Systems</h3>
+            <p class="mt-3 text-sm text-brand-muted leading-relaxed">
+              Expressive and functional typographic layout, micro-kerning, grid construction, and bilingual font pairings for editorial print &amp; screen.
+            </p>
+            <ul class="mt-6 space-y-2 text-xs text-brand-charcoal font-medium border-t border-brand-border pt-4">
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-lime"></span> Hierarchical Structuring
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-lime"></span> Editorial Books &amp; Catalogs
+              </li>
+            </ul>
+          </div>
+
+          <!-- Competency 2 -->
+          <div class="p-8 rounded-2xl border border-brand-border bg-white hover:border-brand-lime transition-all duration-300 group">
+            <div class="w-12 h-12 rounded-xl bg-brand-surface border border-brand-border flex items-center justify-center font-display font-bold text-lg text-brand-black group-hover:bg-brand-lime transition-colors">
+              02
+            </div>
+            <h3 class="font-display font-bold text-xl text-brand-black mt-6">Brand Identity &amp; Strategy</h3>
+            <p class="mt-3 text-sm text-brand-muted leading-relaxed">
+              Transforming conceptual ideas into holistic visual languages, logo design, stationery suites, color palettes, and comprehensive brand books.
+            </p>
+            <ul class="mt-6 space-y-2 text-xs text-brand-charcoal font-medium border-t border-brand-border pt-4">
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-lime"></span> Visual Identity Guidelines
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-lime"></span> Packaging &amp; Mockup Staging
+              </li>
+            </ul>
+          </div>
+
+          <!-- Competency 3 -->
+          <div class="p-8 rounded-2xl border border-brand-border bg-white hover:border-brand-lime transition-all duration-300 group">
+            <div class="w-12 h-12 rounded-xl bg-brand-surface border border-brand-border flex items-center justify-center font-display font-bold text-lg text-brand-black group-hover:bg-brand-lime transition-colors">
+              03
+            </div>
+            <h3 class="font-display font-bold text-xl text-brand-black mt-6">3D Modeling &amp; Motion</h3>
+            <p class="mt-3 text-sm text-brand-muted leading-relaxed">
+              Translating 2D graphic assets into tactile 3D dimensions, cinematic camera framing, lighting mood boards, and kinetic typography.
+            </p>
+            <ul class="mt-6 space-y-2 text-xs text-brand-charcoal font-medium border-t border-brand-border pt-4">
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-lime"></span> Blender 3D Product &amp; Form
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-lime"></span> After Effects Motion Loops
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END: SkillsSection -->
+
+    <!-- BEGIN: ContactSection -->
+    <section class="py-24 bg-brand-surface border-t border-brand-border" id="contact">
+      <div class="max-w-5xl mx-auto px-6 md:px-10 text-center">
+        <span class="inline-block px-3 py-1 rounded-full bg-brand-lime-light border border-brand-lime text-brand-black text-xs font-bold uppercase tracking-wider mb-6">
+          Initiate Contact
+        </span>
+        <h2 class="font-display text-4xl sm:text-6xl font-bold tracking-tight text-brand-black">
+          Let’s create something <br>
+          <span class="text-brand-lime underline decoration-brand-black/20 underline-offset-8">meaningful together.</span>
+        </h2>
+        <p class="mt-6 text-brand-muted max-w-lg mx-auto text-base sm:text-lg">
+          Currently taking selective freelance brand identities, graphic commissions, and discussing internship roles for 2026–2027.
+        </p>
+
+        <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-brand-black text-white text-base font-semibold hover:bg-brand-lime hover:text-brand-black transition-all duration-300 shadow-md" href="mailto:aldi.dkv@design.id">
+            <span>aldi.dkv@design.id</span>
+            <svg aria-hidden="true" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+          </a>
+          <button class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-4 rounded-full border border-brand-border bg-white text-brand-black text-sm font-semibold hover:border-brand-black transition-colors" id="copyEmailBtn" type="button">
+            Copy Email Address
+          </button>
+        </div>
+        <p class="text-xs text-brand-lime font-bold mt-3 opacity-0 transition-opacity duration-300" id="copyToast">
+          ✓ Copied to clipboard!
+        </p>
+      </div>
+    </section>
+    <!-- END: ContactSection -->
+  </main>
+
+  <!-- BEGIN: MinimalistFooter -->
+  <footer class="border-t border-brand-border bg-white py-12">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-brand-muted">
+      <!-- Brand & Copyright -->
+      <div class="flex items-center gap-2">
+        <span class="font-display font-bold text-base text-brand-black">Aldi.</span>
+        <span>— Visual Communication Design Portfolio</span>
+      </div>
+
+      <!-- Social Links -->
+      <div class="flex items-center gap-6 font-medium text-brand-charcoal">
+        <a class="hover:text-brand-lime transition-colors" href="https://behance.net" rel="noopener noreferrer" target="_blank">Behance</a>
+        <a class="hover:text-brand-lime transition-colors" href="https://instagram.com" rel="noopener noreferrer" target="_blank">Instagram</a>
+        <a class="hover:text-brand-lime transition-colors" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+        <a class="hover:text-brand-lime transition-colors" href="https://dribbble.com" rel="noopener noreferrer" target="_blank">Dribbble</a>
+      </div>
+
+      <!-- Copyright Note -->
+      <div>
+        <span>© 2026 Aldi. Crafted with DKV Precision.</span>
+      </div>
+    </div>
+  </footer>
+  <!-- END: MinimalistFooter -->
+
+  <!-- BEGIN: InteractiveScripts -->
+  <script>
+    // 1. Avatar upload & localStorage persistence
+    const photoInput = document.getElementById('photoInput');
+    const avatarImage = document.getElementById('avatarImage');
+
+    const savedAvatar = localStorage.getItem('aldi_portfolio_avatar');
+    if (savedAvatar && avatarImage) {
+      avatarImage.src = savedAvatar;
+    }
+
+    if (photoInput && avatarImage) {
+      photoInput.addEventListener('change', function (event) {
+        const file = event.target.files[0];
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            avatarImage.src = e.target.result;
+            try {
+              localStorage.setItem('aldi_portfolio_avatar', e.target.result);
+            } catch (err) {
+              console.warn('Gambar terlalu besar untuk disimpan otomatis di cache browser.');
+            }
+          };
+          reader.readAsDataURL(file);
+        }
+      });
+    }
+
+    // 2. Work card preview upload & localStorage persistence for cards 1, 2, and 3
+    [1, 2, 3].forEach(cardIndex => {
+      const input = document.getElementById(`cardInput${cardIndex}`);
+      const img = document.getElementById(`cardImg${cardIndex}`);
+      const container = document.getElementById(`cardImageContainer${cardIndex}`);
+
+      const applyCustomCardImage = (dataUrl) => {
+        if (!img || !container) return;
+        img.src = dataUrl;
+        img.classList.remove('hidden');
+        const defaultSvg = container.querySelector('svg');
+        if (defaultSvg) {
+          defaultSvg.classList.add('hidden');
+        }
+      };
+
+      const savedCard = localStorage.getItem(`aldi_portfolio_card_${cardIndex}`);
+      if (savedCard) {
+        applyCustomCardImage(savedCard);
+      }
+
+      if (input && img) {
+        input.addEventListener('change', function (event) {
+          const file = event.target.files[0];
+          if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+              applyCustomCardImage(e.target.result);
+              try {
+                localStorage.setItem(`aldi_portfolio_card_${cardIndex}`, e.target.result);
+              } catch (err) {
+                console.warn('Gambar karya terlalu besar untuk disimpan otomatis di cache browser.');
+              }
+            };
+            reader.readAsDataURL(file);
+          }
+        });
+      }
+    });
+
+    // 3. Portfolio Category Filter Buttons
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const workCards = document.querySelectorAll('.work-card');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const selectedFilter = btn.getAttribute('data-filter');
+
+        // Reset button styles
+        filterButtons.forEach(b => {
+          b.classList.remove('bg-brand-black', 'text-white');
+          b.classList.add('bg-white', 'border', 'border-brand-border', 'text-brand-charcoal');
+        });
+
+        // Highlight active button
+        btn.classList.remove('bg-white', 'border', 'border-brand-border', 'text-brand-charcoal');
+        btn.classList.add('bg-brand-black', 'text-white');
+
+        // Show/hide cards
+        workCards.forEach(card => {
+          const category = card.getAttribute('data-category');
+          if (selectedFilter === 'all' || category === selectedFilter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // 4. Email Clipboard Interaction
+    const copyBtn = document.getElementById('copyEmailBtn');
+    const toast = document.getElementById('copyToast');
+
+    if (copyBtn && toast) {
+      copyBtn.addEventListener('click', function () {
+        navigator.clipboard.writeText('aldi.dkv@design.id').then(() => {
+          toast.classList.remove('opacity-0');
+          toast.classList.add('opacity-100');
+          setTimeout(() => {
+            toast.classList.remove('opacity-100');
+            toast.classList.add('opacity-0');
+          }, 2400);
+        }).catch(() => {
+          alert('Email: aldi.dkv@design.id');
+        });
+      });
+    }
+  </script>
+  <!-- END: InteractiveScripts -->
+
+</body>
+</html>
